@@ -11,18 +11,20 @@ import java.util.ArrayList;
 
 import jp.co.jz4o.studyandroid.R;
 
+/**
+ * オブジェクトのリストをリストビューで表示.
+ */
 public class ObjectListViewActivity extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_object_list_view);
 
+        String[] studentNames = {"一郎", "二郎", "三郎", "四郎", "五郎"};
         ArrayList<Student> students = new ArrayList<>();
-        students.add(new Student(1, "一郎"));
-        students.add(new Student(2, "二郎"));
-        students.add(new Student(3, "三郎"));
-        students.add(new Student(4, "四郎"));
-        students.add(new Student(5, "五郎"));
+        for (int num = 0; num < studentNames.length; num++) {
+            students.add(new Student(num + 1, studentNames[num]));
+        }
 
         StudentAdapter adapter = new StudentAdapter(this);
         adapter.setStudents(students);
@@ -37,7 +39,7 @@ public class ObjectListViewActivity extends AppCompatActivity {
      */
     private AdapterView.OnItemClickListener showStudentName = new AdapterView.OnItemClickListener() {
         @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
             StudentAdapter adapter = (StudentAdapter) parent.getAdapter();
             Student student = adapter.getItem(position);
 

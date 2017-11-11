@@ -13,12 +13,17 @@ import java.util.HashMap;
 
 import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
 
+/**
+ * メニュー画面.
+ */
 public class MenuActivity extends AppCompatActivity {
-    //リストに表示する文字列及び遷移先
+    /**
+     * リストに表示する文字列及び遷移先.
+     */
     private HashMap<String, Class> hashMap = new HashMap<>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -42,7 +47,7 @@ public class MenuActivity extends AppCompatActivity {
      */
     private AdapterView.OnItemClickListener startNewActivity = new AdapterView.OnItemClickListener() {
         @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
             String key = (String) parent.getAdapter().getItem(position);
             Class klass = hashMap.get(key);
 
