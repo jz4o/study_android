@@ -11,6 +11,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
+
 public class MenuActivity extends AppCompatActivity {
     //リストに表示する文字列及び遷移先
     private HashMap<String, Class> hashMap = new HashMap<>();
@@ -22,6 +24,7 @@ public class MenuActivity extends AppCompatActivity {
 
         //リストに表示する文字列及び遷移先をHashMapに格納
         //hashMap.put("文字列", ExampleActivity.class);
+        hashMap.put("リストビューにオブジェクトを使用する", ObjectListViewActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {
