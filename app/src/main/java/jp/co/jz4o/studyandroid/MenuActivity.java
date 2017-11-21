@@ -13,6 +13,7 @@ import java.util.HashMap;
 
 import jp.co.jz4o.studyandroid.BodyScrollTable.BodyScrollTableActivity;
 import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
+import jp.co.jz4o.studyandroid.ObjectTable.ObjectTableActivity;
 
 /**
  * メニュー画面.
@@ -32,6 +33,7 @@ public class MenuActivity extends AppCompatActivity {
         //hashMap.put("文字列", ExampleActivity.class);
         hashMap.put("リストビューにオブジェクトを使用する", ObjectListViewActivity.class);
         hashMap.put("ボディ部のみスクロール可能なテーブル", BodyScrollTableActivity.class);
+        hashMap.put("テーブルにオブジェクトを使用する", ObjectTableActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {

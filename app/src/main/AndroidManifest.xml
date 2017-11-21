@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ObjectListView.ObjectListViewActivity" />
-        <activity android:name=".BodyScrollTable.BodyScrollTableActivity"></activity>
+        <activity android:name=".BodyScrollTable.BodyScrollTableActivity" />
+        <activity android:name=".ObjectTable.ObjectTableActivity" />
     </application>
 
 </manifest>
