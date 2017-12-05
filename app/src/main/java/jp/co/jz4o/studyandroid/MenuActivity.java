@@ -14,6 +14,7 @@ import java.util.HashMap;
 import jp.co.jz4o.studyandroid.BodyScrollTable.BodyScrollTableActivity;
 import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
 import jp.co.jz4o.studyandroid.ObjectTable.ObjectTableActivity;
+import jp.co.jz4o.studyandroid.PartialTemplate.PartialTemplateActivity;
 
 /**
  * メニュー画面.
@@ -34,6 +35,7 @@ public class MenuActivity extends AppCompatActivity {
         hashMap.put("リストビューにオブジェクトを使用する", ObjectListViewActivity.class);
         hashMap.put("ボディ部のみスクロール可能なテーブル", BodyScrollTableActivity.class);
         hashMap.put("テーブルにオブジェクトを使用する", ObjectTableActivity.class);
+        hashMap.put("部分テンプレートを使用する", PartialTemplateActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {
