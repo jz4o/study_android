@@ -18,6 +18,7 @@
         <activity android:name=".ObjectListView.ObjectListViewActivity" />
         <activity android:name=".BodyScrollTable.BodyScrollTableActivity" />
         <activity android:name=".ObjectTable.ObjectTableActivity" />
+        <activity android:name=".PartialTemplate.PartialTemplateActivity" />
     </application>
 
 </manifest>
