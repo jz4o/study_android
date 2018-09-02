@@ -15,6 +15,7 @@ import jp.co.jz4o.studyandroid.BodyScrollTable.BodyScrollTableActivity;
 import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
 import jp.co.jz4o.studyandroid.ObjectTable.ObjectTableActivity;
 import jp.co.jz4o.studyandroid.PartialTemplate.PartialTemplateActivity;
+import jp.co.jz4o.studyandroid.RecognizerIntent.RecognizerIntentActivity;
 
 /**
  * メニュー画面.
@@ -36,6 +37,7 @@ public class MenuActivity extends AppCompatActivity {
         hashMap.put("ボディ部のみスクロール可能なテーブル", BodyScrollTableActivity.class);
         hashMap.put("テーブルにオブジェクトを使用する", ObjectTableActivity.class);
         hashMap.put("部分テンプレートを使用する", PartialTemplateActivity.class);
+        hashMap.put("音声認識したテキストを画面に表示する", RecognizerIntentActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {

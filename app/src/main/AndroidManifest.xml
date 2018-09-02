@@ -19,6 +19,7 @@
         <activity android:name=".BodyScrollTable.BodyScrollTableActivity" />
         <activity android:name=".ObjectTable.ObjectTableActivity" />
         <activity android:name=".PartialTemplate.PartialTemplateActivity" />
+        <activity android:name=".RecognizerIntent.RecognizerIntentActivity" />
     </application>
 
 </manifest>
