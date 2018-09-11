@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import jp.co.jz4o.studyandroid.BodyScrollTable.BodyScrollTableActivity;
+import jp.co.jz4o.studyandroid.DynamicScreenTitle.DynamicScreenTitleActivity;
 import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
 import jp.co.jz4o.studyandroid.ObjectTable.ObjectTableActivity;
 import jp.co.jz4o.studyandroid.PartialTemplate.PartialTemplateActivity;
@@ -38,6 +39,7 @@ public class MenuActivity extends AppCompatActivity {
         hashMap.put("テーブルにオブジェクトを使用する", ObjectTableActivity.class);
         hashMap.put("部分テンプレートを使用する", PartialTemplateActivity.class);
         hashMap.put("音声認識したテキストを画面に表示する", RecognizerIntentActivity.class);
+        hashMap.put("動的に画面タイトルを設定する", DynamicScreenTitleActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
         for (String key : hashMap.keySet()) {
