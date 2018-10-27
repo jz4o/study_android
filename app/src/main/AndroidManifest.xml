@@ -21,6 +21,7 @@
         <activity android:name=".PartialTemplate.PartialTemplateActivity" />
         <activity android:name=".RecognizerIntent.RecognizerIntentActivity" />
         <activity android:name=".DynamicScreenTitle.DynamicScreenTitleActivity" />
+        <activity android:name=".InfiniteScroll.InfiniteScrollActivity" />
     </application>
 
 </manifest>
