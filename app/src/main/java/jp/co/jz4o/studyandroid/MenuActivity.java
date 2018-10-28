@@ -18,6 +18,7 @@ import jp.co.jz4o.studyandroid.ObjectListView.ObjectListViewActivity;
 import jp.co.jz4o.studyandroid.ObjectTable.ObjectTableActivity;
 import jp.co.jz4o.studyandroid.PartialTemplate.PartialTemplateActivity;
 import jp.co.jz4o.studyandroid.RecognizerIntent.RecognizerIntentActivity;
+import jp.co.jz4o.studyandroid.SpeakText.SpeakTextActivity;
 
 /**
  * メニュー画面.
@@ -41,6 +42,7 @@ public class MenuActivity extends AppCompatActivity {
         hashMap.put("テーブルにオブジェクトを使用する", ObjectTableActivity.class);
         hashMap.put("部分テンプレートを使用する", PartialTemplateActivity.class);
         hashMap.put("音声認識したテキストを画面に表示する", RecognizerIntentActivity.class);
+        hashMap.put("テキストを読み上げる", SpeakTextActivity.class);
         hashMap.put("動的に画面タイトルを設定する", DynamicScreenTitleActivity.class);
 
         ArrayList<String> list = new ArrayList<>();
